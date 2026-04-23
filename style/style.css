@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #020202;
+
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+header {
+    height: 44px; 
+    display: flex;
+    justify-content: center;
+    padding: 6px 0px 36px; 
+}
+.robotoMono{
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color : var{--gradient-content};
+}
+.sora{
+    font-family: 'Sora';
+    font-size: 40px;
+    font-weight: extrabold;
+    line-height: 130%;
+}
+.robotoFlex{
+    font-family: 'Roboto Flex', sans-secondary;
+    font-size: 20px;
+}
+.classTitulo{
+    margin-bottom: 42px;
+}
+
+.infoSorteio{
+    display: flex;
+    flex-direction: column;
+    gap : 40px;
+}
+
+.classFlex{
+    display: flex;
+    gap: 12px;
+}
