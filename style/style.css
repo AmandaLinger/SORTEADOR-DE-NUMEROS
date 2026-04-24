@@ -4,9 +4,20 @@
 }
 body{
     background-color: #020202;
-
     color: #FFFFFF;
     padding: 30px;
+    position: relative;
+}
+body::before{
+    content: "";
+    background-image:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8)), url("../assets/img/bg.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 
 header {
@@ -44,4 +55,41 @@ header {
 .classFlex{
     display: flex;
     gap: 12px;
+}
+
+.paragrafo14{
+    font-family: 'Roboto Flex', sans-secondary;
+    font-size: 14px;
+}
+
+.classFlex div p{
+    font-family: 'Roboto flex';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.classFlex div input{
+    border: none;
+    height: 56px;
+    width: 86px;
+    border-radius: 8px;
+    background: #ffffff1b;
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--content-primary);
+    text-align: center;
+}
+
+/* Ocultar setas do spinner em inputs number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
