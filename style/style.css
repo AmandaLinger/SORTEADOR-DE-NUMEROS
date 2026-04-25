@@ -105,6 +105,9 @@ header {
     color: var(--content-primary);
     text-align: center;
 }
+.btnSortear{
+    cursor: pointer;
+}
 
 .robotoFlex12{
     font-family: 'Roboto flex', sans-serif;
@@ -147,13 +150,14 @@ header {
 @media screen and (min-width: 1280px) {
 
     body{
+        overflow: hidden;
         padding: 86px 140px;
 
 
         display: grid;
         height: 100vh;
         grid-template-columns: 1fr 1fr;
-        
+        grid-template-rows: 200px 224px 100px 100px;
 
         grid-template-areas: 
         "header header"
@@ -172,6 +176,10 @@ header {
 
     header{
         justify-content: left;
+
+        img{
+            height:60px;
+        }
     }
 
     .sora{
@@ -214,10 +222,15 @@ header {
 
     .classTitulo{
         margin-bottom: 0px;
+        height: 200px;
     }   
 
     .btnSortear{
         margin-bottom: 0px;
+    }
+
+    .width482{
+        width: 482px;
     }
 
 }
