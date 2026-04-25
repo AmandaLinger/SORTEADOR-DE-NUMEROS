@@ -105,6 +105,7 @@ header {
     font-weight: bold;
     color: var(--content-primary);
     text-align: center;
+    border: 2px solid transparent;
 }
 
 
@@ -113,8 +114,17 @@ header {
     font-weight: bold;
 }
 
-.hoverStyle  input:hover{
-    bor
+.hoverStyle:hover{
+    p{
+        color: var(--content-brand);
+    }
+    input{
+        border:2px solid var(--content-brand);
+    }
+}
+
+.hoverStyle input:focus{
+        border:2px solid var(--content-brand);
 }
 
 .top20{
