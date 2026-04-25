@@ -1,5 +1,6 @@
 @import url('variaveis.css');
 @import url('botoes.css');
+@import url('resultado.css');
 
 *{
     padding: 0px;
@@ -105,13 +106,15 @@ header {
     color: var(--content-primary);
     text-align: center;
 }
-.btnSortear{
-    cursor: pointer;
-}
+
 
 .robotoFlex12{
     font-family: 'Roboto flex', sans-serif;
     font-weight: bold;
+}
+
+.hoverStyle  input:hover{
+    bor
 }
 
 .top20{
@@ -138,12 +141,42 @@ header {
         line-height: 150%;
     }
 }
+.containerTextResult{
+    margin-top: 30px;
+    font-size: 12px;
+
+    img{
+        height: 20px;
+    }
+    .title{
+        color: var(--content-brand);
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        line-height: 150%;
+    }
+}
 
 
 .bottom36{
     margin-bottom:36px;
 }
 
+a{
+    text-decoration: none;
+
+    font-family: 'Roboto flex';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+
+.txtCenter{
+    text-align: center;
+}
 
 
 
@@ -191,6 +224,9 @@ header {
         padding-top: 39px;
         margin-left: 108px;
     }
+    h3{
+        width: 482px;
+    }
     .paragrafo14{
         font-size: 16px;
         width: 482px;
@@ -218,6 +254,7 @@ header {
     .btnSortear{
         height: 56px;
         width: 482px;
+        margin-bottom: 0px;
     }
 
     .classTitulo{

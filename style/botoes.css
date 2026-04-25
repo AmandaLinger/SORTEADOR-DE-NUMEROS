@@ -69,6 +69,7 @@ input:checked + .slider:before {
 
 
 .btnSortear{
+  cursor: pointer;
   font-weight: bold;
   line-height: 150%;
   justify-content: center;

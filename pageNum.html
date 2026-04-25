@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numbers</title>
+    <title>Numbers Resultado</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
-</head>
 
+</head>
 <body>
     <header class="header">
         <img src="assets/img/logo.png" alt="Logo Numbers">
@@ -30,54 +32,30 @@
         <h1 class="sora">SORTEADOR DE NÚMEROS</h1>
     </div>
 
-    <div class="grid5 classFlexCenter" >
-        <a href="pageNum.html">
-            <button class=" classFlex btnSortear robotoFlex">
-                <p>SORTEAR</p>
-                <img src="assets/img/arrow.png" alt="seta">
-            </button>
-        </a>
-    </div>
-
-
     <div class=" grid3 infoSorteio">
-        <div class="container1">
-            <h3 class="robotoFlex size20 ">QUERO SORTEAR:</h3>
-            <p class="paragrafo14">Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+        <div class="container1  ">
+            <h3 class="robotoFlex size20 txtCenter">RESULTADO DO SORTEIO</h3>
+            <p class="paragrafo14 txtCenter">1º resultado</p>
         </div>
     
-        <div class="classFlex12">
-            <div class="hoverStyle">
-                <p>NÚMEROS</p>
-                <input type="number">
-            </div>
+        <div class="classFlex12 robotoMono alinhamentoSresultados">
+            <div id="resultado">2</div>
 
-            <div>
-                <p>DE</p>
-                <input type="number">
-            </div>
-
-            <div>
-                <p>ATÉ </p>
-                <input type="number">
-            </div>
-
+            <div id="resultado">2</div>
         </div>
     </div>
 
+    <a href="">
+        <div class="grid5 classFlexCenter" >
+            <button class=" classFlex btnSortear robotoFlex">
+                <p>SORTEAR NOVAMENTE</p> 
+                <img src="assets/img/arrowCicle.png" alt="seta">
+            </button>
+        </div>
+    </a>
 
-    <div class=" grid4 flexGap8 top20">
-            <p class="robotoFlex12">
-            <label class="toggle-switch">
-                <input type="checkbox" name="repeticao" id="btnRepeticao">
-                <span class="slider"></span>
-            </label>
-                
-            Não repetir número
-        </p>
-    </div>
 
-    <div class="grid2 containerText robotoFlex">
+    <div class="grid2 containerTextResult robotoFlex">
         <div class="classFlex gap8 bottom36 width482">
             <img src="assets/img/pessoa.png" alt="ícone pessoa">
 
