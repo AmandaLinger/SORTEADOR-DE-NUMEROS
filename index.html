@@ -31,7 +31,7 @@
     </div>
 
     <div class="grid5 classFlexCenter" >
-        <a href="pageNum.html">
+        <a href="#" onclick="sortear(); return false;">
             <button class=" classFlex btnSortear robotoFlex">
                 <p>SORTEAR</p>
                 <img src="assets/img/arrow.png" alt="seta">
@@ -49,17 +49,17 @@
         <div class="classFlex12">
             <div class="hoverStyle">
                 <p>NÚMEROS</p>
-                <input type="number">
+                <input type="number" id="qntNumero">
             </div>
 
             <div>
                 <p>DE</p>
-                <input type="number">
+                <input type="number" id="inicioNumero">
             </div>
 
             <div>
                 <p>ATÉ </p>
-                <input type="number">
+                <input type="number" id="finalNumero">
             </div>
 
         </div>
@@ -110,6 +110,8 @@
 
 
     </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

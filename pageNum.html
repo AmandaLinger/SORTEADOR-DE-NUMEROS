@@ -40,12 +40,10 @@
     
         <div class="classFlex12 robotoMono alinhamentoSresultados">
             <div id="resultado">2</div>
-
-            <div id="resultado">2</div>
         </div>
     </div>
 
-    <a href="">
+    <a href="index.html">
         <div class="grid5 classFlexCenter" >
             <button class=" classFlex btnSortear robotoFlex">
                 <p>SORTEAR NOVAMENTE</p> 
@@ -88,6 +86,18 @@
 
 
     </div>
+    
+    <script>
+        // Recupera os números sorteados do localStorage
+        const numeros = JSON.parse(localStorage.getItem('numerosSorteados'));
+        
+        if (numeros && Array.isArray(numeros)) {
+            const container = document.querySelector('.alinhamentoSresultados');
+            if (container) {
+                container.innerHTML = numeros.map(num => `<div id="resultado">${num}</div>`).join('');
+            }
+        }
+    </script>
     
 </body>
 </html>
