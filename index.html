@@ -19,10 +19,10 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <img src="assets/img/logo.png" alt="Logo Numbers">
     </header>
-    <div class="classTitulo">
+    <div class="grid1 classTitulo">
         <p class="robotoMono">
             ONLINE - GRATUITO
         </p>
@@ -30,14 +30,21 @@
         <h1 class="sora">SORTEADOR DE NÚMEROS</h1>
     </div>
 
+    <div class="grid5 classFlexCenter" >
+        <button class=" classFlex btnSortear robotoFlex">
+            <p>SORTEAR</p>
+            <img src="assets/img/arrow.png" alt="seta">
+        </button>
+    </div>
 
-    <div class="infoSorteio">
+
+    <div class=" grid3 infoSorteio">
         <div class="container1">
-            <h3 class="robotoFlex">QUERO SORTEAR:</h3>
+            <h3 class="robotoFlex size20">QUERO SORTEAR:</h3>
             <p class="paragrafo14">Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
         </div>
     
-        <div class="classFlex">
+        <div class="classFlex12">
             <div>
                 <p>NÚMEROS</p>
                 <input type="number">
@@ -54,60 +61,52 @@
             </div>
 
         </div>
-
-        <div>
-            <p>
-
-
-                <label class="toggle-switch">
-                    <input type="checkbox" name="repeticao" id="btnRepeticao">
-                    <span class="slider"></span>
-                </label>
-                
-                Não repetir número
-            </p>
-        </div>
-
-        <div>
-            <button>
-                <p>SORTEAR</p>
-                <img src="assets/img/arrow.png" alt="seta">
-            </button>
-        </div>
-    
     </div>
 
 
-    <div class="containerText">
-        <div>
-            <div class="title">
-                <p>
-                    <img src="assets/img/pessoa.png" alt="ícone pessoa">
+    <div class=" grid4 flexGap8 top20">
+            <p class="robotoFlex12">
+            <label class="toggle-switch">
+                <input type="checkbox" name="repeticao" id="btnRepeticao">
+                <span class="slider"></span>
+            </label>
+                
+            Não repetir número
+        </p>
+    </div>
 
-                    Como funciona o sorteador de números?
+    <div class="grid2 containerText robotoFlex">
+        <div class="classFlex gap8 bottom36">
+            <img src="assets/img/pessoa.png" alt="ícone pessoa">
+
+            <div class="displayFlex">
+                <div class="title">
+                    <p>
+                        Como funciona o sorteador de números?
+                    </p>
+                </div>
+                <p class="descricao">
+                    O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.
                 </p>
             </div>
-
-
-            <p>
-                O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.
-            </p>
         </div>
 
-        <div>
-            <div class="title">
-                <p>
-                    <img src="assets/img/pessoa.png" alt="ícone pessoa">
+        <div class="classFlex gap8 ">
+            <img src="assets/img/pessoa.png" alt="ícone pessoa">
 
-                    Posso escolher o intervalo dos números?                
+            <div class="displayFlex">
+                <div class="title">
+                    <p>
+                        Posso escolher o intervalo dos números? 
+                    </p>
+                </div>
+                <p class="descricao">
+                    Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.
                 </p>
             </div>
-
-
-            <p>
-                Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.            
-            </p>
         </div>
+
+
     </div>
     
 </body>
